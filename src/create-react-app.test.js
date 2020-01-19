@@ -13,6 +13,19 @@ test('Getting started', () => {
   expect(React).toEqual(React);
 });
 
+test('Writing tests', () => {
+  // Within create react app Jest is included
+  // https://jestjs.io/
+  // Jest is a testing framework, which is used to run these tests
+
+  const multiply = (a, b) => {
+    return a * b;
+  };
+
+  // Fix this assert statement and validate that the test is running
+  expect(multiply(2,3)).toEqual(false);
+});
+
 test('Exports & Imports: exporting objects', () => {
   // In the file create-react-app.js export an object called Import
   expect(Import).toBeDefined();
@@ -35,6 +48,7 @@ test('Exports & Imports: importing css assets', () => {
 
 test('Babel', () => {
   // Within create react app Babel is included
+  // https://babeljs.io/
   // Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript
 
   // The config in create-react-app allows you for instance to already use optional chaining
@@ -43,3 +57,6 @@ test('Babel', () => {
   // This test is purely informative
   expect(result).toEqual(undefined);
 });
+
+// Learn more about the things you can do with create-react-app
+// https://create-react-app.dev/docs/getting-started/
