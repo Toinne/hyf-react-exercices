@@ -1,6 +1,6 @@
 import React from 'react';
 import { App } from './component';
-import { render } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 
 // Time to get started with writing React components.
 // Components let you split the UI into independent, reusable pieces, and think about each piece in isolation
@@ -67,4 +67,13 @@ test('The MyApp component renders 200 NewsArticle components', () => {
     // Validates if the rendered App contains articles which are rendered by NewsArticle
     const elements = getAllByRole('article');
     expect(elements.length).toEqual(200);
+});
+
+test('The App component handles a click on the button', async () => {
+    const { getByTestId } = render(<App />);
+
+    const element = await getByTestId('load-more');
+
+    // You should see a message in the console that the button was click
+    fireEvent.click(element);
 });

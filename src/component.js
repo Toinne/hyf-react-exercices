@@ -9,6 +9,7 @@ function App() {
             <p>
                 Renders the value of a variable: <span>{result}</span>
             </p>
+            <button data-testid="load-more" onClick={() => { console.log('The button was clicked') }}>Load More</button>
         </section>
     );
 }
