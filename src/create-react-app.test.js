@@ -5,6 +5,10 @@ import './create-react-app.css';
 // The goal of these tests is to familiarize you with create-react-app
 // To understand the folder structure, the transpiling, dependency management, ... inside create-react-app
 
+// Fix the following tests
+// Fix the assertions in the test below.
+// No need to change anything in tests that pass these are purely informative and are meant to teach you something.
+
 test('Getting started', () => {
   // Get this test to run by installing dependencies with yarn
   // Install yarn https://yarnpkg.com/en/docs/install#mac-stable

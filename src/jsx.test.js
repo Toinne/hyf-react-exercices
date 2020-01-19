@@ -7,7 +7,7 @@ import { render } from '@testing-library/react';
 
 // Fix the following tests
 // For some tests you might need to adjust something in `jsx.js` others require you to fix the assertion.
-// No need to change anything in tests that pass
+// No need to change anything in tests that pass these are purely informative and are meant to teach you something.
 
 test('Renders as html', async () => {
     // When rendering JSX is converted to HTML.
